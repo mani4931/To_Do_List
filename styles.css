@@ -1,0 +1,146 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    padding: 20px 30px;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #6a11cb;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #6a11cb;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-container input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+}
+
+.input-container button {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.input-container button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+ul li .delete {
+    background: #ff5e57;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+ul li .delete:hover {
+    background: #e04848;
+}
+.task-text.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.complete {
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.complete.completed-btn {
+    background: #20c997;
+}
+
+.complete:hover {
+    background: #218838;
+}
+.hidden {
+    display: none;
+}
+
+.task-sections {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.task-sections section {
+    width: 45%;
+}
+
+#completedMessage {
+    margin-top: 20px;
+    padding: 15px;
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    text-align: center;
+}
